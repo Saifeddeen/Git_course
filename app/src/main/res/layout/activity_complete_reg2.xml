@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/line"
+    >
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Complete Your Information"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="@color/loginBlue"
+            android:fontFamily="sans-serif"
+            android:gravity="bottom"
+            android:layout_marginTop="75dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="20"
+                android:textColor="@color/loginBlue"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="70dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Male"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Female"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="15dp" />
+
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textSize="20"
+                android:textColor="@color/loginBlue"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="70dp">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:text="+"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+
+                    />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:text="-"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="kg"
+                    android:textSize="20dp"
+                    android:textColor="@color/loginBlue"
+                    android:fontFamily="sans-serif-medium"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Length"
+                android:textSize="20"
+                android:textColor="@color/loginBlue"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="70dp">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:text="+"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+
+                    />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:text="-"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="cm"
+                    android:textSize="20dp"
+                    android:textColor="@color/loginBlue"
+                    android:fontFamily="sans-serif-medium"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth"
+                android:textSize="20"
+                android:textColor="@color/loginBlue"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName7"
+                android:layout_width="210dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:layout_marginLeft="30dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Save Data"
+            android:layout_marginTop="75dp"
+            android:backgroundTint="@color/loginBlue"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
