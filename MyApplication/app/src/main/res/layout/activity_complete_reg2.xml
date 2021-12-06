@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gender"
-                android:textSize="20"
+                android:textSize="20dp"
                 android:textColor="@color/loginBlue"
                 android:fontFamily="sans-serif-medium"
                 />
@@ -88,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Weight"
-                android:textSize="20"
+                android:textSize="20dp"
                 android:textColor="@color/loginBlue"
                 android:fontFamily="sans-serif-medium"
                 />
@@ -155,7 +155,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Length"
-                android:textSize="20"
+                android:textSize="20dp"
                 android:textColor="@color/loginBlue"
                 android:fontFamily="sans-serif-medium"
                 />
@@ -222,7 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Date Of Birth"
-                android:textSize="20"
+                android:textSize="20dp"
                 android:textColor="@color/loginBlue"
                 android:fontFamily="sans-serif-medium"
                 />
