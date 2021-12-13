@@ -8,14 +8,19 @@
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_man.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/line.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/line2.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/old_status.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/act_login.xml" value="0.25" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/act_rigister.xml" value="0.25" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_add_food_details.xml" value="0.25" />
+        <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_add_record.xml" value="0.2" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_complete_reg.xml" value="0.14402173913043478" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_complete_reg2.xml" value="0.25" />
+        <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_edit_food.xml" value="0.2" />
+        <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_food_list.xml" value="0.25" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_user_status.xml" value="0.25" />
+        <entry key="..\:/Users/Saief_eddeen/AndroidStudioProjects/MyApplication/app/src/main/res/layout/food_item.xml" value="0.12590579710144928" />
       </map>
     </option>
   </component>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/line"
+    >
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/loginBlue"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/loginBlue"
+                android:gravity="left"
+                app:icon="?attr/actionModeCloseDrawable"
+                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BMI Analyzer"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:background="@color/loginBlue"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Record"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/loginBlue"
+            android:fontFamily="sans-serif"
+            android:gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textSize="20dp"
+                android:textColor="@color/loginBlue"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="70dp">
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:text="+"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+
+                    />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:text="-"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="kg"
+                    android:textSize="20dp"
+                    android:textColor="@color/loginBlue"
+                    android:fontFamily="sans-serif-medium"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Length"
+                android:textSize="20dp"
+                android:textColor="@color/loginBlue"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="70dp">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:text="+"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+
+                    />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:text="-"
+                    android:textColor="@color/loginBlue"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:text="cm"
+                    android:textSize="20dp"
+                    android:textColor="@color/loginBlue"
+                    android:fontFamily="sans-serif-medium"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20dp"
+                android:textColor="@color/loginBlue"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName7"
+                android:layout_width="210dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:layout_marginLeft="90dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="20dp"
+                android:textColor="@color/loginBlue"
+                android:fontFamily="sans-serif-medium"
+                />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName8"
+                android:layout_width="210dp"
+                android:layout_height="30dp"
+                android:inputType="number"
+                android:layout_marginLeft="90dp"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:text="Save Data"
+            android:backgroundTint="@color/loginBlue"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="50dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

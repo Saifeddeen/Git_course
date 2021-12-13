@@ -57,7 +57,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Food Details"
+            android:text="Edit Food Details"
             android:textStyle="bold"
             android:textSize="30dp"
             android:textColor="@color/loginBlue"
@@ -180,7 +180,7 @@
             android:id="@+id/imageView2"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/addfooddetails" />
+            app:srcCompat="@drawable/salamon" />
 
         <LinearLayout
             android:layout_width="350dp"

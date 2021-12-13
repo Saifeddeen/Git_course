@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".AddRecord"
+            android:exported="false" />
+        <activity
+            android:name=".EditFood"
+            android:exported="false" />
+        <activity
+            android:name=".FoodList"
+            android:exported="false" />
+        <activity
             android:name=".AddFoodDetails"
             android:exported="false" />
         <activity
