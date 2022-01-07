@@ -50,22 +50,24 @@
                 />
 
             <RadioGroup
+                android:id="@+id/cregRadioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginLeft="70dp">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/cregMale"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
                     android:text="Male"
                     android:textColor="@color/loginBlue"
-                    android:textSize="15dp" />
+                    android:textSize="15dp"
+                    />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/cregFemale"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
@@ -101,7 +103,7 @@
                 android:layout_marginLeft="70dp">
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/cregInc1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:gravity="center"
@@ -113,7 +115,7 @@
                     android:textStyle="bold"/>
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/cregWeight"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:inputType="number"
@@ -121,7 +123,7 @@
                     />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/cregDec1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:gravity="center"
@@ -168,7 +170,7 @@
                 android:layout_marginLeft="70dp">
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/cregInc2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:gravity="center"
@@ -180,7 +182,7 @@
                     android:textStyle="bold"/>
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/cregLength"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
                     android:inputType="number"
@@ -188,7 +190,7 @@
                     />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/cregDec2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:gravity="center"
@@ -228,17 +230,17 @@
                 />
 
             <EditText
-                android:id="@+id/editTextTextPersonName7"
+                android:id="@+id/cregDob"
                 android:layout_width="210dp"
                 android:layout_height="30dp"
-                android:inputType="number"
+                android:inputType="date"
                 android:layout_marginLeft="30dp"
                 />
 
         </LinearLayout>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/cregSave"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="Save Data"

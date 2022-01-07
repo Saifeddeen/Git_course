@@ -1,12 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/black"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/foodImage"
+            android:layout_width="75dp"
+            android:layout_height="match_parent" />
 
 
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/fName"
+                android:layout_width="135dp"
+                android:layout_height="23dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/loginBlue"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/fCategory"
+                android:layout_width="135dp"
+                android:layout_height="21dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/loginBlue"
+                android:textSize="18dp"
+                android:layout_gravity="center|left"/>
+
+            <TextView
+                android:id="@+id/fCal"
+                android:layout_width="135dp"
+                android:layout_height="21dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/loginBlue"
+                android:textSize="18dp"
+                android:layout_gravity="center|left"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/fEditBtn"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="80dp"
+                android:backgroundTint="@color/loginBlue"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/fClearBtn"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="120dp"
+                android:backgroundTint="@color/loginBlue"
+                android:padding="0dp"
+                android:text="Edit"
+                app:icon="@android:drawable/ic_menu_close_clear_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

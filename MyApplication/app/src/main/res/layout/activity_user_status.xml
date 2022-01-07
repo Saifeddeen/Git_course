@@ -23,7 +23,7 @@
         >
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/stextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="BMI Analyzer"
@@ -36,7 +36,7 @@
             />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/stextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hi, Mohammed"
@@ -62,7 +62,7 @@
                />
 
            <EditText
-               android:id="@+id/editTextTextPersonName4"
+               android:id="@+id/sStatus"
                android:layout_width="match_parent"
                android:layout_height="50dp"
                android:inputType="textPersonName"
@@ -87,183 +87,18 @@
                 android:textStyle="bold"
                 />
 
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/usRecycler"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="300dp"
                 android:background="@drawable/line"
                 android:gravity="center"
+                android:layout_gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="282dp"
-                    android:layout_height="72dp"
-                    android:orientation="vertical"
-                    android:layout_marginTop="10dp"
-                    >
 
-                    <LinearLayout
-                        android:layout_width="282dp"
-                        android:layout_height="35dp">
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="20/1/2020"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            />
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="60 Kg"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            android:layout_marginLeft="2dp"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="282dp"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="2dp">
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="Normal"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            />
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="170 Cm"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            android:layout_marginLeft="2dp"
-                            />
-                    </LinearLayout>
 
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="282dp"
-                    android:layout_height="72dp"
-                    android:orientation="vertical"
-                    android:layout_marginTop="10dp"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="282dp"
-                        android:layout_height="35dp">
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="20/1/2020"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            />
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="60 Kg"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            android:layout_marginLeft="2dp"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="282dp"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="2dp">
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="Normal"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            />
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="170 Cm"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            android:layout_marginLeft="2dp"
-                            />
-                    </LinearLayout>
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="282dp"
-                    android:layout_height="72dp"
-                    android:orientation="vertical"
-                    android:layout_marginTop="10dp"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="282dp"
-                        android:layout_height="35dp">
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="20/1/2020"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            />
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="60 Kg"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            android:layout_marginLeft="2dp"
-                            />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="282dp"
-                        android:layout_height="35dp"
-                        android:layout_marginTop="2dp">
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="Normal"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            />
-                        <TextView
-                            android:layout_width="140dp"
-                            android:layout_height="35dp"
-                            android:text="170 Cm"
-                            android:background="@color/white"
-                            android:textSize="18dp"
-                            android:textColor="@color/black"
-                            android:textAlignment="center"
-                            android:layout_marginLeft="2dp"
-                            />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 
@@ -271,7 +106,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content">
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/sAddFoodBtn"
                 android:layout_width="160dp"
                 android:layout_height="50dp"
                 android:text="Add Food"
@@ -282,7 +117,7 @@
                 />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/sAddRecordBtn"
                 android:layout_width="160dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/loginBlue"
@@ -294,7 +129,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/sViewBtn"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="View Food"

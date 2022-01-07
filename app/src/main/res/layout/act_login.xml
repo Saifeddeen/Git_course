@@ -24,7 +24,7 @@
 
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/logintextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome Back"
@@ -36,7 +36,7 @@
             android:layout_marginTop="75dp"/>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/logintextView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
@@ -48,12 +48,12 @@
             android:layout_marginBottom="75dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/loginUname"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:height="50dp"
             android:ems="10"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:hint="username"
             android:textSize="22dp"
             android:textColor="@color/black"
@@ -65,7 +65,7 @@
 
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/loginPassword"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:height="50dp"
@@ -80,7 +80,7 @@
             />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/loginBtn"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="LOG IN"
@@ -98,7 +98,7 @@
             android:layout_marginTop="10dp"
             >
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/logintextView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
@@ -111,7 +111,7 @@
                 />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/loginSignup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
