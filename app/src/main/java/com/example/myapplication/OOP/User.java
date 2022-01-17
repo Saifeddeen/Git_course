@@ -18,7 +18,9 @@ public class User {
     private String password;
     private LocalDate dob;
     private int age;
+    private double agePercent;
     private ArrayList<Record> records;
+    private String currentStatus;
 
     public User(String name, String email, String password){
         this.name = name;
@@ -38,6 +40,7 @@ public class User {
                     this.setGender(gender);
                     this.setDob(dob);
                     this.setAge();
+                    this.setAgePercent();
                     this.records = new ArrayList<Record>();
                     //this.records = new List<Record>();
                 }else {
@@ -115,16 +118,17 @@ public class User {
         return weight;
     }
 
-    //check age is 15 or more
+    //check age is 2 or more
     public static boolean checkAge(LocalDate dob){
         if(dob != null){
-            /*LocalDate today = LocalDate.now();
+            LocalDate today = LocalDate.now();
 
             Period period = Period.between(this.dob,today);
             int age = period.getYears();
-            if(age>=15){
+            if(age>=2){
                 return true;
-            }*/return true;
+            }
+            return true;
         }
         return false;
     }
@@ -140,10 +144,10 @@ public class User {
     }
 
     public void setAge() {
-        if(User.checkAge(this.dob)){
+        LocalDate today = LocalDate.now();
 
-            this.age = 20;
-        }
+        Period period = Period.between(this.dob,today);
+        this.age = period.getYears();
     }
 
     public int getAge() {
@@ -179,5 +183,44 @@ public class User {
 
     public ArrayList<Record> getRecords() {
         return records;
+    }
+
+    //set and get age percent
+
+    public void setAgePercent() {
+        if(getAge()>=2 && getAge()<=10){
+            agePercent = 0.7;
+        }else if((getAge()>10 && getAge()<=20)&&(getGender().equalsIgnoreCase("male"))){
+            agePercent = 0.9;
+        }else if((getAge()>10 && getAge()<=20)&&(getGender().equalsIgnoreCase("female"))){
+            agePercent = 0.9;
+        }else{
+            agePercent = 1;
+        }
+    }
+
+    public double getAgePercent() {
+        return agePercent;
+    }
+
+    //set and get user status
+    public void setCurrentStatus() {
+
+        if(records.size() == 0){
+            this.currentStatus = "Normal";
+            return;
+        }
+
+        double bmi1 = this.records.get(this.records.size()).getBmiValue();
+        double bmi2 = this.records.get(this.records.size()-1).getBmiValue();
+        double deltaBmi = bmi1 - bmi2;
+        int index1 = AppMethodsData.getDeltaIndex(deltaBmi);
+        int index2 = AppMethodsData.getBmiCategIndex(this.records.get(this.records.size()).getBmiCategory());
+        this.currentStatus = AppMethodsData.messageMatrix[index1][index2];
+        this.records.get(this.records.size()).setStatus(this.currentStatus);
+    }
+
+    public String getCurrentStatus() {
+        return currentStatus;
     }
 }

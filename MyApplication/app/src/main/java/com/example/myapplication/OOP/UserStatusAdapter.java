@@ -34,7 +34,7 @@ public class UserStatusAdapter extends RecyclerView.Adapter<UserStatusAdapter.Us
         holder.orDate.setText(this.statusList.get(position).getDate().toString());
         holder.weight.setText(this.statusList.get(position).getWeight());
         holder.len.setText(this.statusList.get(position).getLength());
-        holder.st.setText(this.statusList.get(position).status());
+        holder.st.setText(this.statusList.get(position).getStatus());
 
     }
 

@@ -32,6 +32,18 @@ public class AppMethodsData {
     }
     ///////////////////////////////////////////////
 
+    //message matrix
+    public static String [][] messageMatrix = {
+            {"so bad","so bad","be careful","go ahead"},
+            {"so bad","be careful","go ahead","go ahead"},
+            {"so bad","be careful","still good","little changes"},
+            {"little changes","little changes","little changes","little changes"},
+            {"little changes","little changes","little changes","be careful"},
+            {"still good","be careful","be careful","so bad"},
+            {"go ahead","be careful","so bad","so bad"},
+            {"go ahead","be careful","so bad","so bad"}
+    };
+
     //food list methods
     public static void setFood(ArrayList<Food> food) {
         AppMethodsData.food = food;
@@ -124,5 +136,43 @@ public class AppMethodsData {
     * increase and decrease buttons
     * user status
     * trying the app*/
+
+    //get message matrix first index from delta(difference) and BMI category
+    public static int getDeltaIndex(double delta){
+        if(delta<-1){
+            return 0;
+        }else if(delta>=-1 && delta<-0.6){
+            return 1;
+        }else if(delta>=-0.6 && delta<-0.3){
+            return 2;
+        }else if(delta>=-0.3 && delta<0){
+            return 3;
+        }else if(delta>=0 && delta<0.3){
+            return 4;
+        }else if(delta>=0.3 && delta<0.6){
+            return 5;
+        }else if(delta>=0.6 && delta<1){
+            return 6;
+        }else if(delta>=1){
+            return 7;
+        }else{
+            return 3;
+        }
+    }
+
+    public static int getBmiCategIndex(String categ){
+        if(categ.equalsIgnoreCase("Underweight")){
+            return 0;
+        }else if(categ.equalsIgnoreCase("Healthy Weight")){
+            return 1;
+        }else if(categ.equalsIgnoreCase("Overweight")){
+            return 2;
+        }else if(categ.equalsIgnoreCase("Obesity")){
+            return 3;
+        }else{
+            return -1;
+        }
+    }
+    //////////////////////////////////////////////////////////////////////////
 
 }
